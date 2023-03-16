@@ -1,17 +1,22 @@
 const network = new brain.NeuralNetwork();
 
 const training_data = [
-  { input: [1, 1, 1], output: [0] },
-  { input: [0, 0, 0], output: [1] },
-  { input: [1, 0, 0], output: [1] },
-  { input: [0, 1, 0], output: [1] },
-  { input: [0, 0, 1], output: [1] },
-  { input: [1, 1, 0], output: [0] },
-  { input: [1, 0, 1], output: [1] },
-  { input: [0, 1, 1], output: [1] },
-  { input: [0.1411764705882353, 0.9411764705882353, 1], output: [0] },
-  { input: [0, 0, 0], output: [1] },
-  { input: [1, 0.5019607843137255, 0.5019607843137255], output: [1] },
+{ input:[1,1,1], output: [0] },
+{ input:[0,0,0], output: [1] },
+{ input:[1,0,0], output: [1] },
+{ input:[0,1,0], output: [1] },
+{ input:[0,0,1], output: [1] },
+{ input:[1,1,0], output: [0] },
+{ input:[1,0,1], output: [1] },
+{ input:[0,1,1], output: [1] },
+{ input:[0.1411764705882353,0.9411764705882353,1], output: [0] },
+{ input:[0,0,0], output: [1] },
+{ input:[1,0.5019607843137255,0.5019607843137255], output: [1] },
+{ input:[1,1,1], output: [0] },
+{ input:[0,1,0.01568627450980392], output: [0] },
+{ input:[0,1,0.8352941176470589], output: [0] },
+{ input:[0.0196078431372549,0.984313725490196,1], output: [0] },
+
 ];
 
 function rgbToData(r, g, b) {
